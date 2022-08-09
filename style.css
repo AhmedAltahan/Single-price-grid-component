@@ -1,0 +1,144 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --blue: hsl(218, 22%, 67%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 100px 1px hsla(217, 22%, 67%, 0.64);
+}
+
+header {
+    background-color: white;
+    padding: 35px;
+}
+
+header h3{
+    color: var(--cyan);
+    font-weight: 700;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+header h4 {
+    color: var(--yellow);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+header p {
+    color: var(--blue);
+    line-height: 1.57;
+    font-size: 15px;
+}
+
+.content {
+    background-color: var(--cyan);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content p {
+    color:rgba(255, 255, 255, 0.645);
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+.left , .right {
+    padding: 35px;
+}
+
+.left h4 {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.left p {
+    padding-bottom: 25px;
+}
+
+.left p span {
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+    padding-right: 10px;
+}
+
+.left p.basic {
+    padding-bottom: 20px;
+}
+
+.left a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+    border: 1px solid hsl(71, 73%, 54%) ;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+}
+
+.right {
+    background-color:  hsl(179, 62%, 47% );
+} 
+
+.right h4 {
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.right p {
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width : 635px) {
+    
+    .container {
+        max-width: 10000px;
+        margin: 0px auto;
+    } 
+    
+    .main {
+        width: 600px;
+    }
+    
+    .content {
+        grid-template-columns: 1fr ;
+    } 
+
+}
